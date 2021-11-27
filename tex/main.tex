@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{import}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{codigo}{
+    numberstyle=\tiny,
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=codigo}
+
+\setstretch{1.5}
+\pgfplotsset{width=10cm,compat=1.9}
+
+\pagenumbering{gobble}
+\clearpage
+\thispagestyle{empty}
+
+\title{Branch and Bound e Backtracking}
+\author{Lucas Saliba \and Lucas Santiago}
+\date{Novembro de 2021}
+
+
+\begin{document}
+\maketitle
+
+\section{\emph{Branch and Bound}}
+
+\subsection{Conceito}
+\subsection{Quando usar}
+\subsection{Exemplos}
+
+\section{\emph{Backtracking}}
+
+\subsection{Conceito}
+\subsection{Quando usar}
+\subsection{Exemplos}
+
+\section{Semelhanças e diferenças entre \emph{Branch and Bound} e \emph{Backtracking}}
+
+\section{Relação com a Abordagem Gulosa}
+\section{Relação com Programação Dinâmica}
+\section{Relação com Divisão e Conquista}
+
+
+\end{document}
