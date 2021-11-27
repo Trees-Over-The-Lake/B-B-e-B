@@ -21,5 +21,21 @@ def fibMemo(numero, memo={}):
     memo[numero] = fibMemo(numero - 1, memo) + fibMemo(numero - 2, memo)
     return memo[numero]
 
-print(fib(35))
-print(fibMemo(35))
+def timer(fib, num):
+    start = time.time()
+    fib(num)
+    end = time.time()
+    return end - start
+
+# Escrevendo os tempos na tela
+print(f'Fibonnaci de 10: {timer(fib, 10)}')
+print(f'Fibonnaci de 10 memoization: {timer(fibMemo, 10)}')
+
+print(f'Fibonnaci de 15: {timer(fib, 15)}')
+print(f'Fibonnaci de 15 memoization: {timer(fibMemo, 15)}')
+
+print(f'Fibonnaci de 20: {timer(fib, 20)}')
+print(f'Fibonnaci de 20 memoization: {timer(fibMemo, 20)}')
+
+print(f'Fibonnaci de 30: {timer(fib, 30)}')
+print(f'Fibonnaci de 500 memoization: {timer(fibMemo, 500)}')
