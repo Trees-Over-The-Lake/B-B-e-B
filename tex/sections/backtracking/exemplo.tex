@@ -1,18 +1,21 @@
-Explicacao do problema Ciclo Hamiltoniano
+\subsubsection*{Explicacao do problema Ciclo Hamiltoniano}
 
 O caminho hamiltoniano em um gráfico não direcionado é um caminho que visita cada vértice exatamente uma vez. 
 Um ciclo hamiltoniano é um caminho hamiltoniano tal que existe uma aresta (no gráfico) do último vértice ao primeiro vértice do caminho hamiltoniano. 
 Determine se um determinado gráfico contém Ciclo Hamiltoniano ou não. Se contiver, imprime o caminho. A seguir estão as entradas e saídas da função necessária.
 
-Entrada do problema 
+\subsubsection*{Entrada do problema}
+
 Um gráfico de matriz 2D [V] [V] onde V é o número de vértices no gráfico e o gráfico [V] [V] é a representação da matriz de adjacência do gráfico. 
 Um gráfico de valor [i] [j] é 1 se houver uma borda direta de i para j, caso contrário, gráfico [i] [j] é 0.
 
-Saida do problema 
+\subsubsection*{Saida do problema}
+
 Um caminho de matriz [V] que deve conter o Caminho Hamiltoniano. o caminho [i] deve representar o iº vértice no caminho hamiltoniano. 
 O código também deve retornar falso se não houver um ciclo hamiltoniano no gráfico.
 
-Algoritmo Backtracking  
+\subsubsection*{Algoritmo Backtracking}  
+
 Cria uma matriz de caminho vazia e adiciona o vértice 0 a ela. 
 Adiciona outros vértices, começando do vértice 1. 
 Antes de adicionar um vértice, verifica se ele é adjacente ao vértice adicionado anteriormente e se já não foi adicionado. 
