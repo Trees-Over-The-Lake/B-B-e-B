@@ -3,7 +3,7 @@
 import time
 
 # Código do fibonacci
-def fib(numero):
+def fib(numero):    
     if (numero <= 2):
         return 1
     
