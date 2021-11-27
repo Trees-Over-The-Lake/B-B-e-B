@@ -1,6 +1,5 @@
 # Código baseado na implementação da free code camp
 # Referência: https://youtu.be/oBt53YbR9Kk?t=210
-
 import time
 
 # Código do fibonacci
