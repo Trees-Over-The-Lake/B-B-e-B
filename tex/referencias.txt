@@ -1,0 +1,9 @@
+Backtracking:
+
+https://www.geeksforgeeks.org/backtracking-algorithms/#standard
+https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/
+
+Branch and Bound:
+
+https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/
+https://www.geeksforgeeks.org/implementation-of-0-1-knapsack-using-branch-and-bound/
