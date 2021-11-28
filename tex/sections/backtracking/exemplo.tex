@@ -1,4 +1,4 @@
-\subsubsection*{Explicacao do problema Ciclo Hamiltoniano}
+\subsubsection*{Explicação do problema do ciclo Hamiltoniano}
 
 O caminho hamiltoniano em um gráfico não direcionado é um caminho que visita cada vértice exatamente uma vez. 
 Um ciclo hamiltoniano é um caminho hamiltoniano tal que existe uma aresta (no gráfico) do último vértice ao primeiro vértice do caminho hamiltoniano. 
@@ -6,12 +6,12 @@ Determine se um determinado gráfico contém Ciclo Hamiltoniano ou não. Se cont
 
 \subsubsection*{Entrada do problema}
 
-Um gráfico de matriz 2D [V] [V] onde V é o número de vértices no gráfico e o gráfico [V] [V] é a representação da matriz de adjacência do gráfico. 
-Um gráfico de valor [i] [j] é 1 se houver uma borda direta de i para j, caso contrário, gráfico [i] [j] é 0.
+Um gráfico de matriz 2D $[V] [V]$ onde $V$ é o número de vértices no gráfico e o gráfico $[V] [V]$ é a representação da matriz de adjacência do gráfico. 
+Um gráfico de valor $[i] [j]$ é 1 se houver uma borda direta de $i$ para $j$, caso contrário, gráfico $[i] [j]$ é 0.
 
 \subsubsection*{Saida do problema}
 
-Um caminho de matriz [V] que deve conter o Caminho Hamiltoniano. o caminho [i] deve representar o iº vértice no caminho hamiltoniano. 
+Um caminho de matriz $[V]$ que deve conter o Caminho Hamiltoniano. o caminho $[i]$ deve representar o iº vértice no caminho hamiltoniano. 
 O código também deve retornar falso se não houver um ciclo hamiltoniano no gráfico.
 
 \subsubsection*{Algoritmo Backtracking}  
@@ -22,5 +22,5 @@ Antes de adicionar um vértice, verifica se ele é adjacente ao vértice adicion
 Se encontrarmos tal vértice, adicionamos o vértice como parte da solução. 
 Se não encontrarmos um vértice, retornamos falso.
 
-\subsubsection*{Exemplo de algoritmo}
+\subsection{Exemplo de algoritmo:}
 \lstinputlisting[language=python]{../src/backtracking/CicloHamiltoniano.py}

@@ -1,6 +1,6 @@
 Vamos usar o problema da mochila abaixo para entender o \emph{Branch and Bound}.
-``Dados duas matrizes de inteiros val[0..n-1] e wt[0..n-1] que representam valores e pesos associados a n itens, respectivamente. 
-Descubra o subconjunto de valor máximo de val[] de forma que a soma dos pesos deste subconjunto seja menor ou igual à capacidade W da mochila."
+``Dados duas matrizes de inteiros $val[0..n-1]$ e $wt[0..n-1]$ que representam valores e pesos associados a n itens, respectivamente. 
+Descubra o subconjunto de valor máximo de $val[]$ de forma que a soma dos pesos deste subconjunto seja menor ou igual à capacidade W da mochila."
 
 Existem diferentes abordagens para resolver o problema acima, porém a solução \emph{Branch and Bound} é o método mais adequado quando os pesos dos itens não são inteiros.
 
@@ -13,7 +13,7 @@ Se a solução computada pela abordagem \emph{Greedy} em si é mais do que a mel
 
 \begin{itemize}
     \item Classificar todos os itens em ordem decrescente de razão de valor por unidade de peso para que um limite superior possa ser calculado usando o \emph{Greedy Approach}.
-    \item Inicializar o lucro máximo, maxProfit = 0.
+    \item Inicializar o lucro máximo, $maxProfit = 0$.
     \item Criar uma fila vazia, Q.
     \item Criar um nó fictício da árvore de decisão e enfileire-o em Q. O lucro e o peso do nó fictício são 0.
 \end{itemize}
@@ -22,9 +22,8 @@ Se a solução computada pela abordagem \emph{Greedy} em si é mais do que a mel
     \item Fazer o seguinte enquanto Q não estiver vazio:
     \begin{outline}
         \item Extrair um item de Q. Deixar o item extraído ser u.
-        \item Calcular o lucro do nó do próximo nível. Se o lucro for maior que maxProfit, atualizar o maxProfit.
-        \item Limite de cálculo do nó do próximo nível. Se o limite for maior do que maxProfit, adicione o nó do próximo nível a Q.
-
+        \item Calcular o lucro do nó do próximo nível. Se o lucro for maior que $maxProfit$, atualizar o $maxProfit$.
+        \item Limite de cálculo do nó do próximo nível. Se o limite for maior do que $maxProfit$, adicione o nó do próximo nível a Q.
     \end{outline}
 \end{itemize}
  
