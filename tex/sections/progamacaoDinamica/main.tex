@@ -1,4 +1,18 @@
-\section*{Exemplo}
-Código de exemplo:
-\cite{FibonnaciMemoization}
+\subsection{Conceito}
+
+A ideia inicial da progamação dinâmica está baseada em armazenar todas
+as operações que serão repetidas durante uma recursão. Dessa forma,
+se durante a recursão tiver um nó igual que já foi previamente calculado,
+não será necessário que o cálculo seja feito novamente. Em árvores criadas
+como o algoritmo de fibonacci em que muitos nós são iguais, todos eles
+serão calculados apenas uma vez \cite{DynamicProgramming}.
+
+\subsection{Exemplo de código}
+
 \lstinputlisting[language=python]{../src/progamacaoDinamica/fib.py}
+
+\subsection{Complexidade}
+Como o algoritmo armazena todas as equações já feitas, todas as operações
+são transformar de $\bigO(n^2)$ para $\bigO(n)$. Precisando apenas do
+tempo de encontrar o elemento dentro do dicionário do \emph{Python} e retornando
+ele \cite{FibonnaciMemoization}.
