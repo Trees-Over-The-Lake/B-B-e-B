@@ -1,0 +1,48 @@
+A principal semelhança entre ambos os algoritmos é tentar resolver problemas
+mais complexos de formas mais simples, divindo em subconjuntos menores e
+os resolvendo separadamente. Com isso, ambos são algoritmos inventados para otimizar problemas normalmente
+combinatórios que exigiriam que fossem testados todos os casos para se obter a 
+resposta. Se \emph{Backtracking} conseguir encontrar uma solução mais rápida
+ele vai escolhê-la, se não descartá-la e não resolverá aquele subconjunto.
+\emph{Branch and Bound} vai um pouco além, não se limitando apenas a tentar resolver
+o problema, mas a resolver de forma mais eficiente. Então aqui encontramos a primeira
+diferença. O primeiro algoritmo tentará resolver o problema de qualquer forma,
+enquanto o segundo só resolverá se for mais rápido do que um simples \emph{bruteforce}.
+
+\subsubsection*{Para ficar mais simples o entendimento:}
+
+\begin{center}
+    \begin{tabular}{| m{2cm} | m{4cm} | m{4cm} |}
+        \hline
+        Parâmetro & \emph{Backtracking} & \emph{Branch and Bound} \\
+        \hline
+        Abordagem & 
+        Usado para encontrar todas as soluções possíveis 
+        disponíveis para um problema. Quando ele percebe que fez uma escolha 
+        errada, ele desfaz a última escolha, fazendo o backup dela. 
+        Ele pesquisa a árvore do espaço de estados até encontrar uma solução 
+        para o problema. & 
+        Usado para resolver problemas de otimização. Quando ele percebe que 
+        já tem uma solução ótima melhor para a qual a pré-solução o conduz, 
+        ele abandona essa pré-solução. Ele pesquisa completamente a árvore 
+        do espaço de estado para obter a solução ideal. \\
+        \hline
+        Função &
+        Envolve a função de viabilidade. &
+        Envolve uma função delimitadora. \\
+        \hline
+        Problemas &
+        Usado para resolver o problema de decisão. &
+        Usado para resolver o problema de otimização. \\
+        \hline
+        Busca &
+        O estado da árvore atual e buscado até que a solução seja obtida. &
+        A solução ideal pode estar presente em qualquer lugar na árvore do 
+        espaço de estado, a árvore precisa ser pesquisada completamente. \\
+        \hline
+        Eficiência &
+        Mais eficiente. &
+        Menos eficiente. \\
+        \hline
+    \end{tabular}
+\end{center}

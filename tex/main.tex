@@ -11,6 +11,7 @@
 \usepackage{import}
 \usepackage{hyperref}
 \usepackage{outline}
+\usepackage{array}
 
 \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
 \SetMathAlphabet{\mathcal}{bold}{OMS}{cmsy}{b}{n}
@@ -57,7 +58,7 @@
 \setstretch{1.5}
 \pgfplotsset{width=10cm,compat=1.9}
 
-\title{Branch and Bound e Backtracking}
+\title{\emph{Branch and Bound} e \emph{Backtracking}}
 \author{Lucas Fonseca Saliba \and Lucas Santiago de Oliveira}
 \date{Novembro de 2021}
 
@@ -87,17 +88,21 @@
 \subsection{Exemplo}
 \import{sections/backtracking}{exemplo.tex}
 
-\section{Relação entre \emph{Branch and Bound} e \emph{Backtracking}}
-\import{sections/branchandBack}{semelhancasEdiferencas.tex}
-
-\section{Relação com a Abordagem Gulosa}
+\section{Abordagem Gulosa}
 \import{sections/gulosa}{conceito.tex}
 
-\section{Relação com Programação Dinâmica}
+\section{Programação Dinâmica}
 \import{sections/progamacaoDinamica}{main.tex}
 
-\section{Relação com Divisão e Conquista}
+\section{Divisão e Conquista}
 \import{sections/divisaoEconquista}{main.tex}
+
+\section{Relação entre os algoritmos}
+\subsection{\emph{Branch and Bound} e \emph{Backtracking}}
+\import{sections/branchandBack}{semelhancasEdiferencas.tex}
+
+\subsection{Abordagem gulosa, Programação Dinâmica e Divisão e Conquista}
+\import{sections/branchandBack}{gulosaDinamicaEConquista.tex}
 
 \import{sections/referencias}{referencias.tex}
 

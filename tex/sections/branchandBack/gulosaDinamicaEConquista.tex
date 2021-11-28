@@ -1,0 +1,32 @@
+Abordagem gulosa, programação dinâmica e divisão e conquista são formas em que
+os dois algoritmos previamente citados utilizam-se para conseguir resolver os 
+problemas. Dessa forma, os três algoritmos são como ferramentas para resolver
+os problemas daqueles dois.
+
+Explicando de uma forma mais simples:
+
+Primeiramente para se resolver um problema, todos os cientistas tentam
+uma abordagem gulosa. Para começar é sempre importante encontrar um algoritmo
+que resolva o problema, mesmo que seja lento. Não adianta otimizar um algoritmo
+que tenha erros na resolução dos problemas. 
+Quando passa-se dessa fase, começamos a tentar otimizar todos os passos que forem 
+possíveis. Com isso, podemos usar tanto programação dinâmica para armazenar
+soluções já conhecidas, quanto divisão e conquista para resolver
+problemas semelhantes de cada vez.
+
+Tanto no \emph{backtracking} quanto em \emph{branch and bound} várias recursões 
+são abertas todas as vezes
+que é encontrado dois ou mais possíveis caminhos para solucionar o problema.
+Encontrando algum que não possua a resposta, é só eliminá-lo e continuar a busca
+$-$ divisão e conquista $-$. Ambos possuem uma parte de programação dinâmica
+ao considerarmos que quando é encontrado um caminho ruim para resolver o problema
+todos os caminhos subsequentes serão eliminados junto. Não sendo necessário
+despender tempo calculando caminhos que não trarão a solução do problema.
+
+A grande diferença entre os dois se dá no momento do descarte dos caminhos.
+Para o \emph{backtracking} será descartado apenas se não trouxer a resposta.
+Enquanto em \emph{branch and bound} será descartado no momento que for percebido
+que um simples \emph{bruteforce} nesse subconjunto - que estamos chamando de 
+caminhos - seria o bastante para resolver o problema. Dessa forma,
+\emph{branch and bound} é focado apenas em reduzir a dificuldade de problemas
+para posteriormente serem resolvidos.
