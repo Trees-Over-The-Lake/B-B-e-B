@@ -1,0 +1,4 @@
+Divide and Conquer 
+
+https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm
+https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/

@@ -1,0 +1,42 @@
+Em ciência da computação, divide and conquer é um paradigma de projeto de algoritmo. 
+Um algoritmo de divisão e conquista divide recursivamente um problema em dois ou mais subproblemas do mesmo tipo ou de tipo relacionado, até que se tornem simples o suficiente para serem resolvidos diretamente. 
+As soluções para os subproblemas são então combinadas para fornecer uma solução para o problema original.
+
+A técnica de dividir e conquistar é a base de algoritmos eficientes para muitos problemas, como classificação, multiplicação de grandes números, localização do par mais próximo de pontos e análise sintática.
+
+Esta técnica pode ser dividida nas seguintes três partes:
+
+  - Dividir: Envolve a divisão do problema em subproblemas menores.
+  - Conquistar: Resolva subproblemas chamando recursivamente até que seja resolvido.
+  - Combinar: Combine os subproblemas para obter a solução final de todo o problema.
+
+A grande relação entre o Divide and Conquer, o Branch and Bound e o Backtracking é o fato de todos serem de natureza recursiva devido a maneira em que suas estrategias são conceptualizadas. 
+O Backtracking é uma otimização do brute-force, onde o algoritmo retorna, quando percebe que não tem como achar a resposta pelo caminho atual, por isso ele na maioria das vezes é recursivo. 
+O divisão e conquista divide o problema em subproblemas, usando a recursão para esse processo. 
+Eles possuem a diferença de: O backtracking tenta fazer apenas parte da solução, em busca da solução ótima, já o divide and conquer sempre vai dividir o problema inteiro para a sua resolução.
+
+A seguir estão alguns algoritmos padrão que seguem o algoritmo Divide and Conquer.
+
+  - Quicksort 
+  - Merge Sort 
+  - Par de pontos mais próximo 
+
+Exemplo:
+Encontrar o elemento máximo e mínimo de um array.
+
+Entrada: {70, 250, 50, 80, 140, 12, 14}
+Saída: o número mínimo em uma determinada matriz é: 12
+O número máximo em uma determinada matriz é: 250
+
+Abordagem: encontrar o elemento máximo e mínimo de um determinado array é um aplicativo para dividir para conquistar. 
+Neste problema, encontraremos os elementos máximo e mínimo em um determinado array. 
+Estamos usando uma abordagem de dividir e conquistar (DAC) que tem três etapas: dividir, conquistar e combinar.
+
+Neste problema, estamos usando a abordagem recursiva para encontrar o máximo, onde veremos que apenas dois elementos sobraram e então podemos facilmente usar a condição, ou seja, if (a [índice]> a [índice + 1].)
+Na condição acima, verificamos a condição do lado esquerdo para descobrir o máximo. Agora, veremos a condição do lado direito para encontrar o máximo.
+Função recursiva para verificar o lado direito do índice atual de uma matriz.
+Agora, vamos comparar a condição e verificar o lado direito do índice atual de um determinado array.
+No programa fornecido, vamos implementar essa lógica para verificar a condição do lado direito no índice atual.
+
+Para encontrar o mínimo, vamos implementar uma logica recursiva igual fizemos para achar o maximo. 
+
