@@ -1,0 +1,15 @@
+O backtracking é aplicado a alguns tipos de problemas específicos.
+Ele é uma ferramenta importante para resolver problemas de satisfação de restrições, como palavras cruzadas, aritmética verbal, Sudoku e muitos outros quebra-cabeças. 
+Frequentemente, é a técnica mais conveniente para análise, para o problema da mochila e outros problemas de otimização combinatória. 
+Ele depende dos "procedimentos de caixa preta" fornecidos pelo usuário que definem o problema a ser resolvido, a natureza dos candidatos parciais e como eles são estendidos para candidatos completos. 
+É, portanto, uma metaheurística em vez de um algoritmo específico - embora, ao contrário de muitas outras metaheurísticas, seja garantido que encontrará todas as soluções para um problema finito em um período de tempo limitado. 
+
+Para alguns casos, o backtracking é usado para o problema de enumeração, a fim de encontrar o conjunto de todas as soluções viáveis para o problema.
+Por outro lado, o retrocesso não é considerado uma técnica otimizada para resolver um problema. 
+Ele encontra sua aplicação quando a solução necessária para um problema não tem limite de tempo.
+
+
+Fontes:
+
+https://en.wikipedia.org/wiki/Backtracking
+https://www.baeldung.com/cs/backtracking-algorithms
